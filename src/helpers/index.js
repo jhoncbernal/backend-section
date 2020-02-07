@@ -1,3 +1,4 @@
 module.exports={
-    jwtHelper=require('./jwt.helper')
+    jwtHelper:require('./jwt.helper'),
+    CACHE_TIME:require('./cache-time.helper')
 }
