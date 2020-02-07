@@ -20,7 +20,7 @@ async delete(req,res){
     const deleteComment= await _commentService.delete(commentId);
     return res.send(deleteComment);
 }
-async getIdeasComments(req,res){
+async getIdeaComments(req,res){
     const { ideaId}= req.params;
     const comment= await _commentService.getIdeasComments(ideaId);
     return res.send(comment);
