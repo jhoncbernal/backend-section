@@ -5,7 +5,7 @@ constructor({User}){
     super(User);
     _user=User;
 }
-async getUserByUserName(){
+async getUserByUsername(username){
     return await _user.findOne({username});
 }
 }
